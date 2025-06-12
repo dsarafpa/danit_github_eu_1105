@@ -44,7 +44,7 @@ jobs:
           --api-key-id ${CORTEX_API_KEY_ID} \
           code scan \
           --directory /home/code \
-          --repo-id ${{github.repository}} \
+          --repo-id ${{github-repository}} \
           --branch ${{github.ref_name}} \
           --source 'GITHUB_ACTIONS' \
           --create-repo-if-missing
