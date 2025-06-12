@@ -45,6 +45,7 @@ jobs:
           code scan \
           --directory /home/code \
           --repo-id ${{github.repository}} \
-          --branch 'yarn' \
+          --branch ${{github.ref_name}} \
           --source 'GITHUB_ACTIONS' \
-          --create-repo-if-missing
+          --create-repo-if-missing \
+          --output-file-path /tmp/cortexcli-danit.log
